@@ -1,0 +1,131 @@
+.full{
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+
+    /* background-color: black !important; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* background-image: url("https://www.cosmos.so/images/noise.webp"); */
+    /* animation: moveParticles 5s linear infinite; */
+    background-size: 15% 15%; 
+    /* background-size: 8% 8%;  */
+    
+    
+}
+
+.leftf{
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    border-right:  0.5px solid rgba(255, 255, 255, 0.073);
+ 
+    
+}
+
+.icon-top{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.leftf video{
+    height: 320px
+    
+}
+.bi{
+    margin-right: 120px;
+}
+.rightf{
+    width: 600px;
+    height: 100vh;
+    /* background-color:red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    color: rgba(245, 245, 245, 0.864);
+
+}
+
+.usernamelabel {
+    display: block;
+    color: white;
+    font-size: 14px;
+    padding: 5px 5px;
+  }
+  
+  #usernameField {
+    display: block;
+    padding: 22px;
+    width: 350px;
+    background-color: #292929;
+    border-radius: 30px;
+    border: 2px solid #292929;
+  
+    outline: none;
+    caret-color: rgb(185, 185, 185);
+    color: rgb(212, 212, 212);
+    font-size: 12px;
+    transition-duration: .2s;
+  }
+  
+  #usernameField:focus,
+  #usernameField:valid {
+    border: 2px solid rgba(255, 255, 255, 0.141);
+    transition-duration: .2s;
+  }
+  
+
+  .button {
+    padding: 22px;
+    width: 350px;
+    background-color: rgba(245, 245, 245, 0.799);
+    border-radius: 30px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    cursor: pointer;
+  }
+
+ .pp{
+     color: rgba(245, 245, 245, 0.555);
+    border-bottom: 1px solid rgba(245, 245, 245, 0.608);
+    cursor: pointer;
+  }
+  
+  .pp a{
+    font-style: normal;
+    text-decoration: none;
+    color: rgba(245, 245, 245, 0.555);
+  }
+  .vertical-line {
+    position: relative;
+    width: 0.5px; 
+    background: #fcfcfc2b;
+    top: 0;
+    bottom: 0;
+    margin-left: 0px;
+  }
+
+
+  @media (max-width:800px) {
+    .leftf{
+        display: none;
+    }
+    .button ,.uinp{
+        width: 85vw !important;
+    }
+    .icon-top{
+        display: none;
+    }
+  }

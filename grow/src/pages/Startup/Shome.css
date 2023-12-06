@@ -1,0 +1,383 @@
+.welcomsection{
+    width: 70%;
+    margin-left: 15%;
+    /* background-color: bisque; */
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+.welcomsection h2{
+    font-size: 3.5vw;
+    font-family: 'Poppins', sans-serif;
+}
+.welcomsection p{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+@media (max-width:800px) {
+    .welcomsection h2{
+        font-size: 35px;
+        /* width: 100vw; */
+        font-family: 'Poppins', sans-serif;
+    }
+    .welcomsection p{
+        text-align: justify;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .welcomsection{
+        height: auto;
+        width: 80vw !important;
+        
+    }
+}
+
+/* ______________________________________Add button____________________________________________ */
+.kunbut {
+    --main-focus: #2d8cf0;
+    --font-color: #323232;
+    --bg-color-sub: #dedede;
+    --bg-color: #eee;
+    --main-color: #323232;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .kunbut, .button__icon, .button__text {
+    transition: all 0.3s;
+  }
+  
+  .kunbut .button__text {
+    transform: translateX(22px);
+    color: var(--font-color);
+    font-weight: 600;
+  }
+  
+  .kunbut .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .kunbut .svg {
+    width: 20px;
+    fill: var(--main-color);
+  }
+  
+  .kunbut:hover {
+    background: var(--bg-color);
+  }
+  
+  .kunbut:hover .button__text {
+    color: transparent;
+  }
+  
+  .kunbut:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+  }
+  
+  .kunbut:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+  }
+  /* __________________________________________________________________000 */
+  .edit-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none !important;
+  }
+  
+  .edit-svgIcon {
+    width: 17px;
+    transition-duration: 0.3s;
+  }
+  
+  .edit-svgIcon path {
+    fill: white;
+  }
+  
+  .edit-button:hover {
+    width: 120px;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+    background-color:black;
+    align-items: center;
+  }
+  
+  .edit-button:hover .edit-svgIcon {
+    width: 20px;
+    transition-duration: 0.3s;
+    transform: translateY(60%);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+  
+  .edit-button::before {
+    display: none;
+    content: "Edit";
+    color: white;
+    transition-duration: 0.3s;
+    font-size: 2px;
+  }
+  
+  .edit-button:hover::before {
+    display: block;
+    padding-right: 10px;
+    font-size: 13px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition-duration: 0.3s;
+  }
+/* ---------------------------------------------------------------------000   */
+.delete-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.delete-svgIcon {
+  width: 15px;
+  transition-duration: 0.3s;
+}
+
+.delete-svgIcon path {
+  fill: white;
+}
+
+.delete-button:hover {
+  width: 90px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color:black;
+  align-items: center;
+}
+
+.delete-button:hover .delete-svgIcon {
+  width: 20px;
+  transition-duration: 0.3s;
+  transform: translateY(60%);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.viewsec{
+  display: flex;
+  gap: 20px;
+}
+.delete-button::before {
+  display: none;
+  content: "Delete";
+  color: white;
+  transition-duration: 0.3s;
+  font-size: 2px;
+}
+
+.delete-button:hover::before {
+  display: block;
+  padding-right: 10px;
+  font-size: 13px;
+  opacity: 1;
+  transform: translateY(0px);
+  transition-duration: 0.3s;
+}
+
+
+/* _______________________________-project add page______________________________________________ */
+
+
+
+.every{
+  height: auto;
+  width: 100%;
+  /* padding-top: 10vh; */
+  /* padding-left: 5vh; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+}
+.pro{
+
+  display: block;
+  padding: 22px;
+  width: 50%;
+  background-color: #413f3f;
+  border-radius: 30px;
+  border: 2px solid #292929;
+
+  outline: none;
+  caret-color: rgb(185, 185, 185);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+@media (max-width:800px) {
+  .pro{
+    width: 80vw;
+    height: auto;
+  }
+  .pfield{
+    width: 90vw;
+    margin-left: 0px;
+  }
+  .probutton{
+    width: 85vw !important;
+  }
+  .tta{
+    width: 75vw !important;
+  }
+}
+.tta{
+  padding: 40px;
+  /* padding-top: 20px !important;
+  padding-bottom: 40px !important; */
+  /* height: 100px !important; */
+  /* padding-top: 10px; */
+  width: 48vw;
+  border-radius: 30px;
+  background-color: #292929;
+  border: 0px ;
+  caret-color: rgb(185, 185, 185);
+  color: rgb(212, 212, 212);
+}
+textarea {
+  overflow: hidden;
+  resize: none;
+}
+::placeholder{
+  font-size: 15px;
+}
+.pright{
+  width: 100%;
+  height: 100vh;
+  /* background-color:red; */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 30px;
+  color: rgba(245, 245, 245, 0.864);
+
+}
+
+.usernamelabel {
+  display: block;
+  color: white;
+  font-size: 14px;
+  padding: 5px 5px;
+}
+
+#pfield {
+  display: block;
+  padding: 22px;
+  width: 50vw;
+  background-color: #292929;
+  border-radius: 30px;
+  border: 2px solid #292929;
+
+  outline: none;
+  caret-color: rgb(185, 185, 185);
+  color: rgb(212, 212, 212);
+  font-size: 12px;
+  transition-duration: .2s;
+}
+
+#pfield:focus,
+#pfield:valid {
+  border: 2px solid rgba(255, 255, 255, 0.141);
+  transition-duration: .2s;
+}
+
+
+.probutton {
+  padding: 22px;
+  width: 50vw;
+  background-color: rgba(245, 245, 245, 0.799);
+  border-radius: 30px;
+  text-align: center;
+  font-size: 15px;
+  color: black;
+  cursor: pointer;
+}
+
+.pp{
+   color: rgba(245, 245, 245, 0.555);
+  border-bottom: 1px solid rgba(245, 245, 245, 0.608);
+  cursor: pointer;
+}
+
+.pp a{
+  font-style: normal;
+  text-decoration: none;
+  color: rgba(245, 245, 245, 0.555);
+}
+.vertical-line {
+  position: relative;
+  width: 0.5px; 
+  background: #fcfcfc2b;
+  top: 0;
+  bottom: 0;
+  margin-left: 0px;
+}
+
+
+@media (max-width:800px) {
+  .leftf{
+      display: none;
+  }
+  .button ,.uinp{
+      width: 85vw !important;
+  }
+  .icon-top{
+      display: none;
+  }
+}
+
+/* _-----------------------------------file uplaof0------------------------------- */

@@ -1,0 +1,46 @@
+.banner{
+    width: 100%;
+    height: 30vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:whitesmoke;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    justify-content: space-around;
+}
+.banner img{
+    /* height: ; */
+    width: 8vw;
+}
+.bann{
+    background-color: whitesmoke;
+    height: auto;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.btop{
+    color: rgb(0, 0, 0);
+    margin-bottom: -2px;
+    text-align: center;
+ 
+   
+    
+}
+
+
+@media (max-width:777px) {
+    .banner img{
+        width: 15vw;
+    }
+    .btop{
+        font-size: 25px;
+        font-weight: 200;
+    }
+    .banner{
+        height:100px;
+    }
+    
+}

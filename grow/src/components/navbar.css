@@ -1,0 +1,387 @@
+.menu{
+    display: none;
+   
+}
+.nava{
+  color: whitesmoke !important;
+}
+.links{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.here{
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.icon{
+    align-self: self-start;
+    margin-top: 15px;
+   
+}
+@media (min-width:800px) {
+    .icon{
+        margin-left: -35px;
+    }
+    
+}
+nav ul {
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    font-size: 2rem;
+    font-weight: 550;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 0px;
+    padding-top: 5px;
+  margin-bottom: 3px;
+    
+    margin-left: 50px;
+    background: hsl(0, 0, 100%/0.1);
+    /* backdrop-filter: blur(1rem); */
+}
+nav ul li{
+    font-size: 20px;
+}
+
+.log {
+    flex-grow: 1;
+    align-items: flex-start;
+    display: flex;
+    gap: 5rem;
+}
+
+.lefti{
+    flex-grow: 1;
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-end;
+    gap: 5rem;
+}
+.righti{
+    position: absolute;
+    left: 5%;
+    top: 2%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+nav {
+    backdrop-filter: blur(0.8rem);
+    position: relative; /* or position: absolute; */
+    color: black;
+    z-index: 9999; 
+    margin-bottom: 0px !important; 
+  
+   /* align-items: center; */
+}
+
+@media only screen and (max-width: 800px) {
+
+    nav {
+        position: fixed;
+        align-items: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        inset: 0 0 0 0;
+       
+
+        /* background-color: steelblue; */
+        transform: translate(100%);
+        transition: transform 350ms ease-out;
+        z-index: 1;
+    }
+    .log{
+        display: list-item;
+        flex-grow: 0;
+      
+    }
+
+    .primary {
+        flex-direction: column;
+        padding: 2rem 2rem;
+        gap: 2rem;
+        font-size: 24px;
+      
+        z-index: 1000;
+      
+        
+       
+    }
+    .righti{
+        display: none;
+    }
+
+
+  
+.menu{
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin-top: 5px;
+    background-color: rgba(245, 245, 245, 0.782);
+   
+   
+    border-radius: 30px 30px 30px 30px;
+    outline: none;
+   border: 2px solid transparent;    
+    height: 40px;
+    width: 60px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    aspect-ratio: 2rem;
+    z-index: 9999;
+
+
+
+}
+
+
+}
+
+
+
+
+nav[data-visible='true']{
+    transform: translateX(0%);
+    
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+.rr3{
+position: absolute;
+right: 10px;
+
+}
+.rr2{
+position: absolute;
+right: 200px;
+}
+.rr{
+position: absolute;
+right: 300px;
+}
+}
+
+
+
+/* _____________________________ */
+ /* CSS */
+
+.now{
+width: 300px;
+
+}
+
+/* ------------------------------------------ */
+
+.log p {
+border-bottom: 2px solid transparent; /* Start with a transparent underline */
+transition:  0.3s ease-in-out; /* Add a smooth transition for the border-color property */
+}
+
+.log p:hover {
+border-color: white; /* Change the border color to white on hover */
+
+}
+
+
+      /* ____________________________________for selection___________________________ */
+      ::selection{
+background-color: #dcf400c1;
+color: black;
+}
+
+
+
+    @media screen and (min-width: 1024px) {
+.r{
+margin-right: 150px;
+}
+}
+
+   .r{
+    width: 800px;
+    height: 700px;
+    /* background-color: blue; */
+   
+    text-align: justify;
+   }
+   .r h2{
+    opacity: 0.5;
+   }
+ 
+   @media only screen and (max-width: 600px) {
+.r p{
+font-size: 15px;
+}
+.r h2{
+font-size: 20px;
+}
+}
+@media screen and (min-width: 769px) {
+    .hresh{
+        display: none;
+    }
+    
+  }
+  
+.ll{
+    display: none;
+}
+  @media (max-width:800px) {
+    .ll{
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: 15px;
+        color: whitesmoke;
+        z-index: 999999;
+
+    }
+    .ll img{
+        height: 50px;
+        width: 50px;
+         border-radius: 50%;
+    }
+    .mhid{
+        display: none !important;
+    }
+   
+  }
+
+
+/* _________________000 */
+
+
+/* ------------- */
+
+
+.fill {
+    position: relative;
+    display:block;
+    height: 45px;
+    width: 150px;
+    margin: 10px 7px;
+    margin-right: 5%;
+    padding: 5px 5px;
+    font-weight: 100;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: black;
+    border: 2px #fffcfa solid;
+    border-radius: 30px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow:hidden;
+    background: whitesmoke;
+    z-index: 1;
+    cursor: pointer;
+    transition:         0.08s ease-in;
+    -o-transition:      0.08s ease-in;
+    -ms-transition:     0.08s ease-in;
+    -moz-transition:    0.08s ease-in;
+    -webkit-transition: 0.08s ease-in;
+  }
+  .fill:hover{
+    color: black !important;
+    border: black !important;
+  }
+  
+  .fill:hover {
+    color: whitesmoke;
+  }
+  
+  .fill:before {
+    content: "";
+    position: absolute;
+    background: #DDF400;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.1s ease-in;
+  }
+  
+  .fill:hover:before {
+    top: 0;
+  }
+  /* ___________________________________________________________________________dropdowm______________________ */
+  .paste-button {
+    position: relative;
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .butto {
+    /* background-color: whitesmoke; */
+    background-color: #DDF400;
+    color: #212121;
+    padding: 8px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 2vh;
+  }
+  
+  .dropdown-content {
+    display: none;
+    font-size: 13px;
+    position: absolute;
+    z-index: 1;
+    /* min-width: 200px; */
+width: 100%;
+    background-color: #212121;
+    /* border: 2px solid whitesmoke; */
+    border-radius: 0px 15px 15px 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  
+  .dropdown-content a {
+    color: whitesmoke;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    transition: 0.1s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #DDF400;
+    color: #212121;
+  }
+  
+  .dropdown-content a:focus {
+    background-color: #212121;
+    color: #4CAF50;
+  }
+  
+  /* .dropdown-content #top:hover {
+    border-radius: 0px 13px 0px 0px;
+  } */
+  
+  .dropdown-content #bottom:hover {
+    border-radius: 0px 0px 13px 13px;
+  }
+  
+  .paste-button:hover button {
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+  .paste-button:hover .dropdown-content {
+    display: block;
+  }
+  

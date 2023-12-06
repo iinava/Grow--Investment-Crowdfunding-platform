@@ -1,0 +1,19 @@
+.custom-cursor {
+    position: fixed;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    /* filter: blur(5px);  */
+    border-radius: 50%;
+    pointer-events: none; /* Ensures the cursor doesn't interfere with interactions */
+    mix-blend-mode: difference; /* Blend mode for cursor visibility */
+    transition: all 0.2s linear; /* Smooth cursor movement */
+    z-index: 1;
+  }
+
+  @media only screen and (max-width: 767px) {
+    .custom-cursor{
+      display: none;
+    }
+  }
+  
