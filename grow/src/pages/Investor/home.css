@@ -258,6 +258,11 @@
     width: 80vw !important;
     /* height: auto !important; */
   }
+
+  .filterbuttons{
+    width: auto !important;
+  }
+
 }
 
 /* ______________________________________________________________________________________________________________________________ */
@@ -304,4 +309,35 @@
   align-items: center;
   color: whitesmoke;
   padding-left: 5%;
+}
+
+
+
+/* ________________________________________________________ */
+.filterbuttons{
+  width: 400px;
+  /* background-color: white; */
+  margin-left: 1%;
+  margin-bottom: 3%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.buttonone{
+  /* padding: 10px; */
+  background-color: transparent;
+  color: whitesmoke;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.buttonone.active {
+  background-color: whitesmoke; /* Set your desired background color for the active button */
+  color: black; /* Set your desired text color for the active button */
 }
